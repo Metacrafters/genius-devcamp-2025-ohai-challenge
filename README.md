@@ -34,7 +34,7 @@ The AI should answer in a kind and helpful tone. (15%)
 
 # Definitions
 ## Event
-Entity that appears on a user’s calendar that has a start and end time, or is taking place all day. Can reoccur.
+Entity that appears on a user’s calendar that has a start and end time, or is taking place all day. Can reoccur.  If the entity in the document specifically mentions a calendar but no end time is provided, assume 1 hour duration.
 
 ***Required***
 * Title
