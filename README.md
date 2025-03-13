@@ -22,6 +22,16 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 # Submission Requirements
 1. Your system prompt
 
+## Judging Criteria
+***Accuracy***
+Extract all events, reminders, and todos with their relevant information.  This is the most important objective (75%)
+
+***Performance***
+The fewer the tokens the better. Don’t sacrifice accuracy for performance! (10%)
+
+***Tone***
+The AI should answer in a kind and helpful tone. (15%)
+
 # Definitions
 ## Event
 Entity that appears on a user’s calendar that has a start and end time, or is taking place all day. Can reoccur.
