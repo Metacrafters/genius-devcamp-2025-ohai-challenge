@@ -71,3 +71,4 @@ Entity that requires something to be done but not at a specific time. Cannot reo
 
 ***Examples***
 * Do 10 Pushups
+* Grocery list
