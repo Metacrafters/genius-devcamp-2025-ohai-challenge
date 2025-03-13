@@ -29,7 +29,7 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 Extract all events, reminders, and todos with their relevant information.  This is the most important objective (75%)
 
 ***Performance***
-The fewer the tokens the better. Don’t sacrifice accuracy for performance!  We will use (this)[https://platform.openai.com/tokenizer] counter:  (10%)
+The fewer the tokens the better. Don’t sacrifice accuracy for performance!  We will use [this](https://platform.openai.com/tokenizer) counter:  (10%)
 
 ***Tone***
 The AI should answer in a kind and helpful tone. (15%)
