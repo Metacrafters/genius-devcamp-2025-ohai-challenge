@@ -12,6 +12,7 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 1. Use an LLM
 2. Support .png and .jpg formats
 3. Test with the provided documents. You can also use your own documents
+4. Respect any additional information that the user gives in their prompt. i.e. "Ignore events that occur on Wednesdays"
 
 ## Program Input
 1. user prompt (string)
