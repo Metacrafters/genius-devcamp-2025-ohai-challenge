@@ -2,7 +2,7 @@
 Genius Devcamp Document Processing Challenge from Ohai
 
 # Challenge
-Create a program that converts images (.jpg and .png) into events, reminders, and todo items. The output of your program should be a human readable listing of the extracted events, reminders, and todo items along with a kind, helpful, and upbeat message to the user 
+Create a program that converts images into events, reminders, and todo items. The output of your program should be a human readable listing of the extracted events, reminders, and todo items along with a kind, helpful, and upbeat message to the user 
 
 # Tip
 Use the Genius DevCamp API to feed your system prompt with helpful guidelines on how to read different types of documents
@@ -10,7 +10,8 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 # Requirements
 ## General
 1. Use an LLM
-2. Test with the provided documents. You can also use your own documents
+2. Support .png and .jpg formats
+3. Test with the provided documents. You can also use your own documents
 
 ## Program Input
 1. user prompt (string)
@@ -22,9 +23,19 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 # Submission Requirements
 1. Your system prompt
 
+## Judging Criteria
+***Accuracy***
+Extract all events, reminders, and todos with their relevant information.  This is the most important objective (75%)
+
+***Performance***
+The fewer the tokens the better. Don’t sacrifice accuracy for performance! (10%)
+
+***Tone***
+The AI should answer in a kind and helpful tone. (15%)
+
 # Definitions
 ## Event
-Entity that appears on a user’s calendar that has a start and end time, or is taking place all day. Can reoccur.
+Entity that appears on a user’s calendar that has a start and end time, or is taking place all day. Can reoccur.  If the entity in the document specifically mentions a calendar but no end time is provided, assume 1 hour duration.
 
 ***Required***
 * Title
@@ -61,3 +72,4 @@ Entity that requires something to be done but not at a specific time. Cannot reo
 
 ***Examples***
 * Do 10 Pushups
+* Grocery list
