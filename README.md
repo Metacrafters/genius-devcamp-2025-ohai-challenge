@@ -2,7 +2,7 @@
 Genius Devcamp Document Processing Challenge from Ohai
 
 # Challenge
-Create a program that converts images (.jpg and .png) into events, reminders, and todo items. The output of your program should be a human readable listing of the extracted events, reminders, and todo items along with a kind, helpful, and upbeat message to the user 
+Create a program that converts images into events, reminders, and todo items. The output of your program should be a human readable listing of the extracted events, reminders, and todo items along with a kind, helpful, and upbeat message to the user 
 
 # Tip
 Use the Genius DevCamp API to feed your system prompt with helpful guidelines on how to read different types of documents
@@ -10,7 +10,8 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 # Requirements
 ## General
 1. Use an LLM
-2. Test with the provided documents. You can also use your own documents
+2. Support .png and .jpg formats
+3. Test with the provided documents. You can also use your own documents
 
 ## Program Input
 1. user prompt (string)
