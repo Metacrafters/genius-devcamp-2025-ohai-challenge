@@ -93,6 +93,10 @@ Json in the following format
             "type": "string",
             "description": "Title of the reminder."
           },
+          "message": {
+            "type": "string",
+            "description": "The message sent to the user."
+          },
           "rrules": {
             "type": "array",
             "items": {
@@ -102,7 +106,7 @@ Json in the following format
             "nullable": true
           }
         },
-        "required": ["time", "title"]
+        "required": ["time", "title", "message"]
       }
     },
     "todos": {
