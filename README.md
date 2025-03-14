@@ -126,6 +126,7 @@ Json in the following format
 
 # Submission Requirements
 1. Your system prompt
+2. Your json output
 
 ## Judging Criteria
 ***Accuracy***
