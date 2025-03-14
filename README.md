@@ -20,6 +20,108 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 
 ## Program Output
 1. Human readable listing of the extracted events, reminders, and todos along with a kind, helpful, and upbeat message to the user (string)
+Json in the following format
+# JSON Schema
+
+This schema defines the structure of the JSON response, including events, reminders, and todos.
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "response": {
+      "type": "string",
+      "description": "This is the response to the user."
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Event start time in ISO 8601 format."
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Event end time in ISO 8601 format."
+          },
+          "all_day": {
+            "type": "boolean",
+            "description": "Indicates if the event lasts all day."
+          },
+          "title": {
+            "type": "string",
+            "description": "Name of the event."
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional description of the event.",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "description": "Optional location of the event.",
+            "nullable": true
+          },
+          "rrules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Optional array of recurrence rules in RFC5545 format.",
+            "nullable": true
+          }
+        },
+        "required": ["startTime", "endTime", "all_day", "title"]
+      }
+    },
+    "Reminders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Reminder time in ISO 8601 format."
+          },
+          "title": {
+            "type": "string",
+            "description": "Title of the reminder."
+          },
+          "rrules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Optional array of recurrence rules in RFC5545 format.",
+            "nullable": true
+          }
+        },
+        "required": ["time", "title"]
+      }
+    },
+    "todos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the to-do item."
+          }
+        },
+        "required": ["title"]
+      }
+    }
+  },
+  "required": ["response", "events", "Reminders", "todos"]
+}
+
 
 # Submission Requirements
 1. Your system prompt
