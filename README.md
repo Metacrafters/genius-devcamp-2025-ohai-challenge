@@ -21,9 +21,9 @@ Use the Genius DevCamp API to feed your system prompt with helpful guidelines on
 ## Program Output
 1. Human readable listing of the extracted events, reminders, and todos along with a kind, helpful, and upbeat message to the user (string)
 Json in the following format
-# JSON Schema
 
-This schema defines the structure of the JSON response, including events, reminders, and todos.
+
+2. The following json
 
 ```json
 {
