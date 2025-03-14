@@ -120,7 +120,7 @@ This schema defines the structure of the JSON response, including events, remind
     }
   },
   "required": ["response", "events", "Reminders", "todos"]
-}
+}```
 
 
 # Submission Requirements
